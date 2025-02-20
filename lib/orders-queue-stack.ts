@@ -96,7 +96,7 @@ export class OrdersQueueStack extends cdk.Stack {
           EVENT_BUS_NAME: ordersEventBus.eventBusName, // NEW: Add EVENT_BUS_NAME to the environment variables of the executeOrder lambda function
         },
 
-        reservedConcurrentExecutions: 1,
+        // reservedConcurrentExecutions: 1,
         timeout: cdk.Duration.seconds(30), // I set a timeout of 30 seconds for the lambda function (for demo purposes, I want the fake processing to be very long), and the visibility timeout to 150 seconds: AWS recommends to set the visibility timeout to 6 times the timeout of your lambda
       }
     );

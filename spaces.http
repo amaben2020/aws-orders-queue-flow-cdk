@@ -1,0 +1,9 @@
+POST https://jomqdhsni4.execute-api.eu-west-1.amazonaws.com/prod/request-order
+
+{
+  "itemName": "Iphone 13 pro max",
+    "quantity": 1,
+    "username": "benoski",
+    "userEmail": "uzochukwubenamara@gmail.com"
+}
+###
